@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="en">
-
+  {% load static %}
 <head>
   <meta charset="utf-8">
-  <title>Superio | Just another HTML Template | Login</title>
+  <title> Enbott - Login</title>
 
   <!-- Stylesheets -->
   <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
@@ -27,24 +26,25 @@
 
     <!-- Preloader -->
     <div class="preloader"></div>
-
+    <span class="header-span"></span>
     <!-- Main Header-->
     <header class="main-header">
+      
       <div class="container-fluid">
         <!-- Main box -->
         <div class="main-box">
           <!--Nav Outer -->
           <div class="nav-outer">
             <div class="logo-box">
-              <div class="logo"><a href="index.html"><img src="{% static 'images/logo-2.svg' %}" alt="" title=""></a></div>
+              <div class="logo"><a href="index.html"><img src="{% static 'images/enbott-logo.png' %}" alt="" title=""style="width: 150px; height: auto;"></a></div>
             </div>
           </div>
 
           <div class="outer-box">
             <!-- Login/Register -->
             <div class="btn-box">
-              <a href="login-popup.html" class="theme-btn btn-style-three call-modal">Login / Register</a>
-              <a href="dashboard-post-job.html" class="theme-btn btn-style-one"><span class="btn-title">Job Post</span></a>
+              <a href="register.html" class="theme-btn btn-style-three call-modal">Register</a>
+              <!-- <a href="dashboard-post-job.html" class="theme-btn btn-style-one"><span class="btn-title">Job Post</span></a> -->
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@
 
       <!-- Mobile Header -->
       <div class="mobile-header">
-        <div class="logo"><a href="index.html"><img src="{% static 'images/logo.svg' %}" alt="" title=""></a></div>
+        <!-- <div class="logo"><a href="index.html"><img src="{% static 'images/white.logo.png' %}" alt="" title=""style="width: 150px; height: auto;"></a></div> -->
       </div>
 
       <!-- Mobile Nav -->
@@ -62,15 +62,14 @@
 
     <!-- Info Section -->
     <div class="login-section">
-      <div class="image-layer" style="background-image: url({% static 'images/background/12.jpg' %});"></div>
+      <div class="image-layer" style="background-image: url('{% static 'images/Sign\ Up\ Page.png' %}');"></div>
       <div class="outer-box">
         <!-- Login Form -->
         <div class="login-form default-form">
           <div class="form-inner">
-            <h3>Login to Superio</h3>
+            <h3>Login to Enbott</h3>
             <!--Login Form-->
-            <form method="post" action="/signin/">
-              {% csrf_token %}
+            <form method="post" action="add-parcel.html">
               <div class="form-group">
                 <label>Username</label>
                 <input type="text" name="username" placeholder="Username" required>

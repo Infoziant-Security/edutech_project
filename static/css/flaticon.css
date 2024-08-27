@@ -37,7 +37,7 @@
 .flaticon-search:before { content: "\f106"; }
 .flaticon-drop:before { content: "\f107"; }
 .flaticon-christmas-tree:before { content: "\f108"; }
-.flaticon-plus:before { content: "\f109"; }
+.flaticon-plus:before {  content: "\f109"; }
 .flaticon-battery:before { content: "\f10a"; }
 .flaticon-target:before { content: "\f10b"; }
 .flaticon-first-aid-kit:before { content: "\f10c"; }
@@ -108,7 +108,7 @@
 .flaticon-smartphone-2:before { content: "\f14d"; }
 .flaticon-mobile:before { content: "\f14e"; }
 .flaticon-maps-and-flags:before { content: "\f14f"; }
-.flaticon-add:before { content: "\f150"; }
+.flaticon-add:before { content: "\f150"; color: white; }
 .flaticon-substract:before { content: "\f151"; }
 .flaticon-phone-call:before { content: "\f152"; }
 .flaticon-monitor:before { content: "\f153"; }

@@ -1,0 +1,1502 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+<head>
+  <meta charset="utf-8">
+  <title>Enbott - Home</title>
+
+  <!-- Stylesheets -->
+  <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+
+  <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+  <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon">
+
+  <!-- Responsive -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js' %}"></script><![endif]-->
+  <!--[if lt IE 9]><script src="{% static 'js/respond.js' %}"></script><![endif]-->
+</head>
+
+<body data-anm=".anm">
+
+  
+  
+    <!-- Preloader -->
+    <div class="preloader"></div>
+
+    <!-- Header Span -->
+  
+    <!-- Main Header-->
+    <header class="main-header">
+      
+      <div class="container-fluid">
+        <!-- Main box -->
+        <div class="main-box">
+          <!--Nav Outer -->
+          <div class="nav-outer">
+            <div class="logo-box">
+              <div class="logo">
+                <a href="index.html"
+                  ><img src="{% static 'images/enbott-logo.png' %}" alt="" title=""
+                /></a>
+              </div>
+            </div>
+
+            <nav class="nav main-menu">
+              <ul class="navigation" id="navbar">
+                <li class="current">
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li>
+                  <a href="jobs.html">Jobs</a>
+                </li>
+  
+                <li>
+                  <a href="companies.html">Companies</a>
+                </li>
+  
+                <li>
+                  <a href="courses.html">Courses</a>
+                </li>
+
+                <!-- Only for Mobile View -->
+                <li class="mm-add-listing">
+                  <a href="add-listing.html" class="theme-btn btn-style-one"
+                    >Job Post</a
+                  >
+                  <span>
+                    <span class="contact-info">
+                      <span class="phone-num"
+                        ><span>Call us</span
+                        ><a href="tel:1234567890">123 456 7890</a></span
+                      >
+                      <span class="address"
+                        >329 Queensberry Street, North Melbourne VIC
+                        <br />3051, Australia.</span
+                      >
+                      <a href="mailto:support@superio.com" class="email"
+                        >support@superio.com</a
+                      >
+                    </span>
+                    <span class="social-links">
+                      <a href="#"><span class="fab fa-facebook-f"></span></a>
+                      <a href="#"><span class="fab fa-twitter"></span></a>
+                      <a href="#"><span class="fab fa-instagram"></span></a>
+                      <a href="#"><span class="fab fa-linkedin-in"></span></a>
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </nav>
+            <!-- Main Menu End-->
+          </div>
+
+          <div class="outer-box">
+            <!-- Login/Register -->
+            <div class="btn-box">
+              <a href="/register/" class="theme-btn dark-color theme-clone bdrs30">Register</a>
+              <a href="/login/" class="theme-btn theme-clone home21-jp-btn btn-style-dark bdrs30" >Login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Header -->
+      <div class="mobile-header">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="{% static 'images/logo.svg' %}" alt="" title=""
+          /></a>
+        </div>
+
+        <!--Nav Box-->
+        <div class="nav-outer clearfix">
+          <div class="outer-box">
+            <!-- Login/Register -->
+            <div class="login-box">
+              <a href="login-popup.html" class="call-modal"
+                ><span class="icon-user"></span
+              ></a>
+            </div>
+
+            <a href="#nav-mobile" class="mobile-nav-toggler navbar-trigger"
+              ><span class="flaticon-menu-1"></span
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div id="nav-mobile"></div>
+    </header>
+    <!--End Main Header -->
+
+    <!-- Banner Section Three-->
+    <section class="banner-section-three at-home21">
+      <div class="auto-container">
+        <div class="row">
+          <div class="content-column col-xl-10 mx-auto">
+            <div class="inner-column">
+              <div class="title-box text-center wow fadeInUp">
+                <h3>Elevate Your Career with <span class="gradient-text">enbott</span> - All in one Career Catalyst</h3>
+                <div class="text">Empowering Individuals and Transforming Organizations</div>
+            </div>
+            
+              <!-- Job Search Form -->
+              <div class="job-search-form bdrs120 wow fadeInUp" data-wow-delay="200ms">
+                <form method="post" action="" class="bdrs120">
+                  <div class="row">
+                    <!-- Form Group -->
+                    <div class="form-group col-lg-4 col-md-12 col-sm-12">
+                      <span class="icon flaticon-search-1"></span>
+                      <input type="text" name="field_name" placeholder="Job title, keywords, or company">
+                    </div>
+                    <!-- Form Group -->
+                    <div class="form-group col-lg-3 col-md-12 col-sm-12 location">
+                      <span class="icon flaticon-map-locator"></span>
+                      <input type="text" name="field_name" placeholder="City or postcode">
+                    </div>
+                    <!-- Form Group -->
+                    <div class="form-group col-lg-3 col-md-12 col-sm-12 category">
+                      <span class="icon flaticon-briefcase"></span>
+                      <select class="chosen-select">
+                        <option value="">All Categories</option>
+                        <option value="44">Accounting / Finance</option>
+                        <option value="106">Automotive Jobs</option>
+                        <option value="46">Customer</option>
+                        <option value="48">Design</option>
+                        <option value="47">Development</option>
+                        <option value="45">Health and Care</option>
+                        <option value="105">Marketing</option>
+                        <option value="107">Project Management</option>
+                      </select>
+                    </div>
+                    <!-- Form Group -->
+                    <div class="form-group col-lg-2 col-md-12 col-sm-12 text-right">
+                      <button type="submit" class="theme-btn btn-style-two btn-style-dark bdrs120 theme-clone">Find Jobs</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <!-- Job Search Form -->
+            </div>
+          </div>
+        </div>
+        <img class="home21-hero-img wow fadeInUp" src="{% static 'images/index-21/home21-hero-peoples.png' %}" alt="" data-wow-delay="300ms">
+      </div>
+    </section>
+    <!-- End Banner Section Three-->
+
+    <!-- Our Partners --> 
+    <section class="clients-section ">
+      <div class="sponsors-outer">
+        <!--Sponsors Carousel-->
+        <ul class="sponsors-carousel owl-carousel owl-theme">
+          <li class="slide-item">
+            <figure class="image-box"><a href="#"><img src="{% static 'images/clients/1-1.png' %}" alt="" style="max-width: 50%; height: auto;" ></a></figure>
+          </li>
+          <li class="slide-item">
+            <figure class="image-box"><a href="#"><img src="{% static 'images/clients/1-2.png' %}" alt="" style="max-width: 50%; height: auto;"></a></figure>
+          </li>
+          <li class="slide-item">
+            <figure class="image-box"><a href="#"><img src="{% static 'images/clients/1-3.png' %}" alt="" style="max-width: 50%; height: auto;"></a></figure>
+          </li>
+          <li class="slide-item">
+            <figure class="image-box"><a href="#"><img src="{% static 'images/clients/1-4.png' %}" alt="" style="max-width: 50%; height: auto;"></a></figure>
+          </li>
+          <li class="slide-item">
+            <figure class="image-box"><a href="#"><img src="{% static 'images/clients/1-5.png' %}" alt="" style="max-width: 60%; height: auto;"></a></figure>
+          </li>
+          <li class="slide-item">
+            <figure class="image-box"><a href="#"><img src="{% static 'images/clients/1-6.png' %}" alt="" style="max-width: 40%; height: auto;"></a></figure>
+          </li>
+          <li class="slide-item">
+            <figure class="image-box"><a href="#"><img src="{% static 'images/clients/1-7.png' %}" alt="" style="max-width: 50%; height: auto;"></a></figure>
+          </li>
+          <li class="slide-item">
+            <figure class="image-box"><a href="#"><img src="{% static 'images/clients/1-8.png' %}" alt="" style="max-width: 50%; height: auto;"></a></figure>
+          </li>
+          <li class="slide-item">
+            <figure class="image-box"><a href="#"><img src="{% static 'images/clients/1-9.png' %}" alt="" style="max-width: 50%; height: auto;"></a></figure>
+          </li>
+          <li class="slide-item">
+            <figure class="image-box"><a href="#"><img src="{% static 'images/clients/1-10.png' %}" alt="" style="max-width: 50%; height: auto;"></a></figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    
+
+
+    
+
+    <!-- CTA Section -->
+    <section class="about-section-two cta-home21-1 bgc-home21 layout-pt-120 layout-pb-40 ">
+      <div class="auto-container">
+        <div class="row align-items-center">
+          <!-- Content Column -->
+          <div class="content-column col-lg-6 order-2">
+            <div class="inner-column wow fadeInRight pt-0">
+              <div class="sec-title mb-4">
+                <h2>Unbiased Services to Unlock <br class="d-none d-xl-block">Your Career Potential </h2><br>
+              </div>
+              <div class="findjob-process">
+                <div class="wrapper mb40">
+                  <div class="m-circle text-thm">1</div>
+                  <h5 class="title mt15">AI-Powered Job Matching</h5>
+                  <p>Find your perfect career fit with our advanced matching algorithms.</p>
+                </div>
+                <div class="wrapper mb60">
+                  <div class="m-circle before-none text-thm">2</div>
+                  <h5 class="title mt15">Comprehensive Skill Assessments</h5>
+                  <p>Identify your strengths and areas for growth.</p>
+                </div>
+                <div class="wrapper mb60">
+                  <div class="m-circle before-none text-thm">3</div>
+                  <h5 class="title mt15">Expert Mentorship</h5>
+                  <p>Gain insights from industry leaders and accelerate your career.</p>
+                </div>
+              </div>
+              <a href="#" class="theme-btn theme-clone -black">Get Started Now <i class="fal fa-long-arrow-right ms-3"></i></a>
+            </div>
+          </div>
+
+          <!-- Image Column -->
+          <div class="image-column col-lg-6 mb-4 mb-lg-0">
+            <figure class="image-box wow fadeInLeft mx-0"><img src="{% static 'images/index-21/about-1.png' %}" alt=""></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End CTA Section -->
+
+    
+
+  
+    
+
+      <!-- About Section -->
+      <section id="section-1" class="about-section-two style-two layout-pt-150 layout-pb-60 js-tab-menu-content">
+        <div class="auto-container">
+          <div class="row grid-base justify-content-evenly align-items-center">
+            <!-- Content Column -->
+            <div class="content-column col-xl-4 col-lg-5 col-md-12 col-sm-12 order-2 order-lg-1">
+              <div class="inner-column -no-padding wow fadeInLeft">
+                <div class="sec-title">
+                  <h2 class="fw-700">Unique Learning <br> Path</h2>
+                  <div class="text mt-30">Start your job search with confidence by exploring various avenues</div>
+                </div>
+                <ul class="list-style-one mt-24 mb-24">
+                  <li>Chart your course to success</li>
+                  <li>Learn at your own pace, master in-demand skills</li>
+                  <li>Achieve your career goals with personalized guidance</li>
+                </ul>
+                <a href="register.html" class="theme-btn theme-clone -black">Discover More</a>
+              </div>
+            </div>
+
+            <!-- Image Column -->
+            <div class="image-column -no-margin col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2 wow fadeInRight">
+              <figure class="image-box"><img src="{% static 'images/index-12/images/1.png' %}" alt=""></figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- About Section -->
+      <section id="section-2" class="about-section-two style-two layout-pt-60 layout-pb-60 js-tab-menu-content">
+        <div class="auto-container">
+          <div class="row grid-base justify-content-evenly align-items-center">
+            <!-- Image Column -->
+            <div class="image-column -no-margin col-xl-5 col-lg-6 col-md-12 col-sm-12 wow fadeInRight">
+              <figure class="image-box"><img src="{% static 'images/index-12/images/2.png' %}" alt=""></figure>
+            </div>
+
+            <!-- Content Column -->
+            <div class="content-column col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-12 col-sm-12">
+              <div class="wow fadeInLeft">
+                <div class="sec-title">
+                  <h2 class="fw-700">Optimize Your<br> Hiring Process</h2>
+                  <div class="text mt-30">Our advanced tools streamline every step, ensuring a seamless and effective hiring process. Elevate your recruitment strategy to attract and onboard the validated skilled candidates with ease.</div>
+                  <ul class="list-style-one mt-24 mb-24">
+                    <li>Streamline your recruitment, from sourcing to onboarding</li>
+                    <li>Hire top talent faster with AI-powered insights</li>
+                    <li>Reduce time-to-hire and improve candidate experience</li>
+                  </ul>
+                </div>
+                <a href="register.html" class="theme-btn theme-clone -black">Discover More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- About Section -->
+      <section id="section-3" class="about-section-two style-two layout-pt-60 layout-pb-60 js-tab-menu-content">
+        <div class="auto-container">
+          <div class="row grid-base justify-content-evenly align-items-center">
+            <!-- Content Column -->
+            <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 order-2 order-lg-1">
+              <div class="content-column">
+                <div class="inner-column -no-padding wow fadeInLeft">
+                  <div class="sec-title">
+                    <h2 class="color-blue-dark fw-700">Project Support and <br> Ideation</h2>
+                  </div>
+                  <ul class="list-style-one mt-24 mb-24">
+                    <li>Transform your ideas into reality. </li>
+                    <li>Get expert guidance and support</li>
+                    <li>Collaborate and innovate with ease</li>
+                  </ul>
+                  <a href="register.html" class="theme-btn theme-clone -black">Discover More</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image Column -->
+            <div class="image-column -no-margin col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2 wow fadeInRight">
+              <figure class="image-box -wide-right"><img src="{% static 'images/index-12/images/3.png' %}" alt=""></figure>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+    </div>
+    <!-- Job Categories -->
+    <section class="layout-pt-60 layout-pb-120 at-home21 bgc-home21 layout-pb-70">
+      <div class="auto-container">
+        <div class="row justify-content-between align-items-end">
+          <div class="col-lg-6">
+            <div class="">
+              <h2 class="fw-700">Inclusive Mentoring</h2>
+              <div class="text mt-9">Get Mentored by our Highly Qualified Industry Experts.</div>
+            </div>
+          </div>
+
+          <div class="col-auto">
+            <a href="#" class="button-icon -arrow" id="browse-all">
+              Browse All
+              <span class="fa fa-angle-right"></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="row grid-base pt-50 wow fadeInUp">
+
+          <!-- Candidates Block -->
+          <div class="candidate -type-1 col-xl-auto col-lg-3 col-md-6 col-sm-12">
+            <div class="image">
+              <img src="{% static 'images/index-12/candidates/1.png' %}" alt="image">
+            </div>
+
+            <div class="content">
+              <h4><a href="#">Senior Data Scientist</a></h4>
+
+            </div>
+          </div>
+
+          <!-- Candidates Block -->
+          <div class="candidate -type-1 col-xl-auto col-lg-3 col-md-6 col-sm-12">
+            <div class="image">
+              <img src="{% static 'images/index-12/candidates/2.png' %}" alt="image">
+            </div>
+
+            <div class="content">
+              <h4><a href="#">Product Leadership Coach</a></h4>
+
+            </div>
+          </div>
+
+          <!-- Candidates Block -->
+          <div class="candidate -type-1 col-xl-auto col-lg-3 col-md-6 col-sm-12">
+            <div class="image">
+              <img src="{% static 'images/index-12/candidates/3.png' %}" alt="image">
+            </div>
+
+            <div class="content">
+              <h4><a href="#">Senior Software Engineer</a></h4>
+            </div>
+          </div>
+
+          <!-- Candidates Block -->
+          <div class="candidate -type-1 col-xl-auto col-lg-3 col-md-6 col-sm-12">
+            <div class="image">
+              <img src="{% static 'images/index-12/candidates/4.png' %}" alt="image">
+            </div>
+
+            <div class="content">
+              <h4><a href="#">Product Manager</a></h4>
+
+            </div>
+          </div>
+
+          <!-- Candidates Block -->
+          <div class="candidate -type-1 col-xl-auto col-lg-3 col-md-6 col-sm-12">
+            <div class="image">
+              <img src="{% static 'images/index-12/candidates/5.png' %}" alt="image">
+            </div>
+
+            <div class="content">
+              <h4><a href="#">ML Research Scientist</a></h4>
+ 
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Job Categories -->
+
+    <!-- Top Companies Hiring Now -->
+    
+    <!-- End Top Companies Hiring Now -->
+
+    <!-- List Of USA Jobs -->
+    <section class="layout-pt-120 layout-pb-60 border-bottom-none ">
+      <div class="auto-container">
+        <div class="text-center wow fadeInUp">
+          <div class="sec-title">
+            <h2>Unlock Your Career Potential with Our Comprehensive Features</h2>
+            <div class="text"></div>
+          </div>
+        </div>
+        <div class="row wow fadeInUp">
+          <!-- Category Block -->
+          <div class="category-block-two text-center col-lg-4 col-sm-6">
+            <div class="d-block mb30">
+              <div class="thumb mb30"><img src="{% static 'images/index-21/icon-logo-1.png' %}" alt=""></div>
+              <div class="details">
+                <h5 class="mb10 fz20 fw500">Internship and Placements</h5>
+                <p class="text fz15">Gain experience and enhance your <br class="d-none d-lg-block"> skills with top companies.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Category Block -->
+          <div class="category-block-two at-home21 text-center col-lg-4 col-sm-6">
+            <div class="d-block mb30">
+              <div class="thumb mb30"><img src="{% static 'images/index-21/icon-logo-2.png' %}" alt=""></div>
+              <div class="details">
+                <h5 class="mb10 fz20 fw500">AI-Driven Career Insights</h5>
+                <p class="text fz15">Leverage AI for trends, market data,  <br class="d-none d-lg-block"> and tailored career advice.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Category Block -->
+          <div class="category-block-two at-home21 text-center col-lg-4 col-sm-6">
+            <div class="d-block mb30">
+              <div class="thumb mb30"><img src="{% static 'images/index-21/icon-logo-3.png' %}" alt=""></div>
+              <div class="details">
+                <h5 class="mb10 fz20 fw500">Empowering Institutions</h5>
+                <p class="text fz15">Provide institutions with tools <br class="d-none d-lg-block"> for student achievement.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End List Of USA Jobs -->
+
+    <!-- Browse by Category -->
+    <section class="layout-pt-60 layout-pb-60 border-bottom-none at-home21 bgc-home21 layout-pb-70">
+      <div class="auto-container">
+        <div class="d-flex align-items-center justify-content-between wow fadeInUp">
+          <div class="sec-title">
+            <h2>Browse by Category</h2>
+            <div class="text">2020 jobs live - 293 added today.</div>
+          </div>
+          <a href="" class="text ud-btn2">See all <i class="fal fa-long-arrow-right"></i></a>
+        </div>
+        <div class="row wow fadeInUp">
+          <!-- Category Block -->
+          <div class="category-block-two at-home21 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="inner-box">
+              <div class="content">
+                <span class="icon flaticon-money-1"></span>
+                <h4><a href="#">Marketing</a></h4>
+                <p>(86 open positions)</p>
+              </div>
+            </div>
+          </div>
+          <!-- Category Block -->
+          <div class="category-block-two at-home21 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="inner-box">
+              <div class="content">
+                <span class="icon flaticon-promotion"></span>
+                <h4><a href="#">Design</a></h4>
+                <p>(43 open positions)</p>
+              </div>
+            </div>
+          </div>
+          <!-- Category Block -->
+          <div class="category-block-two at-home21 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="inner-box">
+              <div class="content">
+                <span class="icon flaticon-vector"></span>
+                <h4><a href="#">Development</a></h4>
+                <p>(12 open positions)</p>
+              </div>
+            </div>
+          </div>
+          <!-- Category Block -->
+          <div class="category-block-two at-home21 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="inner-box">
+              <div class="content">
+                <span class="icon flaticon-web-programming"></span>
+                <h4><a href="#">Customer Service</a></h4>
+                <p>(72 open positions)</p>
+              </div>
+            </div>
+          </div>
+          <!-- Category Block -->
+          <div class="category-block-two at-home21 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="inner-box">
+              <div class="content">
+                <span class="icon flaticon-headhunting"></span>
+                <h4><a href="#">Health and Care</a></h4>
+                <p>(25 open positions)</p>
+              </div>
+            </div>
+          </div>
+          <!-- Category Block -->
+          <div class="category-block-two at-home21 col-xl-2 col-lg-3 col-md-4 col-sm-6">
+            <div class="inner-box">
+              <div class="content">
+                <span class="icon flaticon-rocket-ship"></span>
+                <h4><a href="#">Automotive Jobs</a></h4>
+                <p>(92 open positions)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Browse by Category -->
+    <!-- Featured Jobs -->
+    <section class="job-section alternate ">
+      <div class="auto-container">
+        <div class="sec-title text-center">
+          <h2 >Most Popular Jobs</h2>
+          <div class="text">Know your worth and find the job that qualify your life</div>
+        </div>
+
+        <div class="default-tabs tabs-box">
+          <!--Tabs Box-->
+          <ul class="tab-buttons">
+            <li class="tab-btn" data-tab="#tab1">All</li>
+            <li class="tab-btn active-btn" data-tab="#tab2">Trending</li>
+            <li class="tab-btn" data-tab="#tab3">Design</li>
+            <li class="tab-btn" data-tab="#tab4">Marketing</li>
+            <li class="tab-btn" data-tab="#tab5">Health</li>
+          </ul>
+
+          <div class="tabs-content wow fadeInUp">
+            <!--Tab-->
+            <div class="tab" id="tab1">
+              <div class="row">
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-1.png' %}" alt=""></span>
+                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-2.png' %}" alt=""></span>
+                      <h4><a href="#">Recruiting Coordinator</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-3.png' %}" alt=""></span>
+                      <h4><a href="#">Product Manager, Studio</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-4.png' %}" alt=""></span>
+                      <h4><a href="#">Senior Product Designer</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-5.png' %}" alt=""></span>
+                      <h4><a href="#">Senior Full Stack Engineer, Creator Success</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-6.png' %}" alt=""></span>
+                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Tab-->
+            <div class="tab active-tab" id="tab2">
+              <div class="row">
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-1.png' %}" alt=""></span>
+                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-2.png' %}" alt=""></span>
+                      <h4><a href="#">Recruiting Coordinator</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-3.png' %}" alt=""></span>
+                      <h4><a href="#">Product Manager, Studio</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-4.png' %}" alt=""></span>
+                      <h4><a href="#">Senior Product Designer</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-5.png' %}" alt=""></span>
+                      <h4><a href="#">Senior Full Stack Engineer, Creator Success</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-6.png' %}" alt=""></span>
+                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Tab-->
+            <div class="tab" id="tab3">
+              <div class="row">
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-1.png' %}" alt=""></span>
+                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-2.png' %}" alt=""></span>
+                      <h4><a href="#">Recruiting Coordinator</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-3.png' %}" alt=""></span>
+                      <h4><a href="#">Product Manager, Studio</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-4.png' %}" alt=""></span>
+                      <h4><a href="#">Senior Product Designer</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-5.png' %}" alt=""></span>
+                      <h4><a href="#">Senior Full Stack Engineer, Creator Success</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-6.png' %}" alt=""></span>
+                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Tab-->
+            <div class="tab" id="tab5">
+              <div class="row">
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-1.png' %}" alt=""></span>
+                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-2.png' %}" alt=""></span>
+                      <h4><a href="#">Recruiting Coordinator</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-3.png' %}" alt=""></span>
+                      <h4><a href="#">Product Manager, Studio</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-4.png' %}" alt=""></span>
+                      <h4><a href="#">Senior Product Designer</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-5.png' %}" alt=""></span>
+                      <h4><a href="#">Senior Full Stack Engineer, Creator Success</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-6.png' %}" alt=""></span>
+                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Tab-->
+            <div class="tab" id="tab4">
+              <div class="row">
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-1.png' %}" alt=""></span>
+                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-2.png' %}" alt=""></span>
+                      <h4><a href="#">Recruiting Coordinator</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-3.png' %}" alt=""></span>
+                      <h4><a href="#">Product Manager, Studio</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-4.png' %}" alt=""></span>
+                      <h4><a href="#">Senior Product Designer</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-5.png' %}" alt=""></span>
+                      <h4><a href="#">Senior Full Stack Engineer, Creator Success</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Job Block -->
+                <div class="job-block col-lg-6 col-md-12 col-sm-12">
+                  <div class="inner-box">
+                    <div class="content">
+                      <span class="company-logo"><img src="{% static 'images/resource/company-logo/1-6.png' %}" alt=""></span>
+                      <h4><a href="#">Software Engineer (Android), Libraries</a></h4>
+                      <ul class="job-info">
+                        <li><span class="icon flaticon-briefcase"></span> Segment</li>
+                        <li><span class="icon flaticon-map-locator"></span> London, UK</li>
+                        <li><span class="icon flaticon-clock-3"></span> 11 hours ago</li>
+                        <li><span class="icon flaticon-money"></span> $35k - $45k</li>
+                      </ul>
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <button class="bookmark-btn"><span class="flaticon-bookmark"></span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Job Section -->
+
+    <!-- Testimonial Section Two -->
+    <section class="testimonial-section-two at-home21 bgc-home21 layout-pb-test">
+      <div class="container-fluid">
+        <div class="testimonial-left"><img src="{% static 'images/resource/left-group.png' %}" alt=""></div>
+        <div class="testimonial-right"><img src="{% static 'images/resource/right-group.png' %}" alt=""></div>
+        <!-- Sec Title -->
+        <div class="sec-title text-center">
+          <h2>Testimonials From Our Users</h2>
+        </div>
+
+        <div class="carousel-outer">
+          <!-- Testimonial Carousel -->
+          <div class="testimonial-carousel owl-carousel owl-theme">
+
+            <!--Testimonial Block -->
+            <div class="testimonial-block-two">
+              <div class="inner-box">
+                <div class="thumb"><img src="{% static 'images/resource/testi-img1.png' %}" alt=""></div>
+                <h4 class="title">Great quality!</h4>
+                <div class="text">  Enbott has been a game-changer for my career. The AI-powered
+                  job recommendations helped me land my dream job, and the
+                  skill assessment guided me in upskilling effectively. I love
+                  how Enbott brings together job searching, learning, and
+                  mentorship on one platform. It's my go-to career resource.</div>
+                <div class="info-box">
+                  <h4 class="name">Arun Pandi</h4>
+                  <span class="designation">Lead Web Developer</span>
+                </div>
+              </div>
+            </div>
+
+            <!--Testimonial Block -->
+            <div class="testimonial-block-two">
+              <div class="inner-box">
+                <div class="thumb"><img src="{% static 'images/resource/testi-img2.png' %}" alt=""></div>
+                <h4 class="title">Highly Recommended</h4>
+                <div class="text">Enbott has revolutionized our hiring process. The AI-powered
+                  candidate matching has saved us countless hours and improved
+                  the quality of our hires. The platform’s ability to connect
+                  us with top talent and streamline the application process is
+                  invaluable.</div>
+                <div class="info-box">
+                  <h4 class="name">Sanjay V</h4>
+                  <span class="designation">Talent Acquisition Specialist</span>
+                </div>
+              </div>
+            </div>
+
+             <!--Testimonial Block -->
+             <div class="testimonial-block-two">
+              <div class="inner-box">
+                <div class="thumb"><img src="{% static 'images/resource/testi-img3.png' %}" alt=""></div>
+                <h4 class="title">Excellent platform!!</h4>
+                <div class="text">Enbott has provided me with a fantastic platform to share my
+                  expertise and mentor aspiring professionals. The mentorship
+                  tools are exceptional. The ability to connect with potential
+                  clients and showcase my project portfolio has been a
+                  game-changer for my business.</div>
+                <div class="info-box">
+                  <h4 class="name">Brooklyn Simmons</h4>
+                  <span class="designation">Web Developer</span>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!--Testimonial Block -->
+            <div class="testimonial-block-two">
+              <div class="inner-box">
+                <div class="thumb"><img src="{% static 'images/resource/testi-img4.png' %}" alt=""></div>
+                <h4 class="title">Exceptional Support!</h4>
+                <div class="text">Enbott has been instrumental in helping our students achieve
+                  their career goals. The platform's data and insights have
+                  been invaluable in shaping our career services strategy. The
+                  ability to connect our students with recruiters and industry
+                  experts through Enbott has significantly improved placement
+                  rates.</div>
+                <div class="info-box">
+                  <h4 class="name">Kalasalingam University</h4>
+                  <span class="designation">Placement Officer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- End Testimonial Section -->
+  
+    <!-- Main Footer -->
+    <footer class="main-footer style-seven">
+      <!--Widgets Section-->
+      <div class="widgets-section">
+        <div class="auto-container">
+
+          <div class="row">
+            <div class="big-column col-xl-3 col-lg-3 col-md-12">
+              <div class="footer-column about-widget">
+                <div class="logo" style="width: 60%; height: 40px; padding-bottom: 4px"><a href="#"><img src="{% static 'images/index-21/footer-logo.png' %}" alt=""></a></div>
+                <p class="phone-num"><span>Call us </span><a href="thebeehost@support.com">1 (314) 732 0300 <br/>+91 96000 85988</a></p>
+                <p class="address">Akshaya HQ, Rajiv Gandhi Salai, Kazhipattur,<br>Tamil Nadu, Chennai - 603103, India.<br>1401, 21st ST STE 6310,<br/>Sacramento, CA 95811, USA<br/><a href="mailto:support@infoziant.com" class="email">support@infoziant.com</a></p>
+              </div>
+            </div>
+
+            <div class="big-column col-xl-9 col-lg-9 col-md-12">
+              <div class="row">
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h4 class="widget-title">For Candidates</h4>
+                    <div class="widget-content">
+                      <ul class="list">
+                        <li><a href="#">Browse Jobs</a></li>
+                        <li><a href="#">Browse Categories</a></li>
+                        <li><a href="#">Candidate Dashboard</a></li>
+                        <li><a href="#">Job Alerts</a></li>
+                        <li><a href="#">My Bookmarks</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h4 class="widget-title">For Employers</h4>
+                    <div class="widget-content">
+                      <ul class="list">
+                        <li><a href="#">Browse Candidates</a></li>
+                        <li><a href="#">Employer Dashboard</a></li>
+                        <li><a href="#">Add Job</a></li>
+                        <li><a href="#">Job Packages</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget links-widget">
+                    <h4 class="widget-title">About Us</h4>
+                    <div class="widget-content">
+                      <ul class="list">
+                        <li><a href="#">Job Page</a></li>
+                        <li><a href="#">Job Page Alternative</a></li>
+                        <li><a href="#">Resume Page</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                  <div class="footer-widget">
+                    <h4 class="widget-title">Mobile Apps</h4>
+                    <div class="widget-content">
+                      <div class="download-btns">
+                        <div class="text">Click and Get started in seconds</div>
+                        <a class="mb20 d-block" href="#"><img src="{% static 'images/index-21/apple.png' %}" alt=""></a>
+                        <a href="#"><img src="{% static 'images/index-21/google.png' %}" alt=""></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Bottom-->
+      <div class="footer-bottom">
+        <div class="auto-container">
+          <div class="outer-box">
+            <div class="copyright-text">© 2024 <a href="#">Enbott</a>. All Right Reserved.</div>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+    </footer>
+    <!-- End Main Footer -->
+
+
+  </div><!-- End Page Wrapper -->
+
+
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/chosen.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'js/jquery.fancybox.js' %}"></script>
+  <script src="{% static 'js/jquery.modal.min.js' %}"></script>
+  <script src="{% static 'js/mmenu.polyfills.js' %}"></script>
+  <script src="{% static 'js/mmenu.js' %}"></script>
+  <script src="{% static 'js/appear.js' %}"></script>
+  <script src="{% static 'js/anm.min.js' %}"></script>
+  <script src="{% static 'js/ScrollMagic.min.js' %}"></script>
+  <script src="{% static 'js/rellax.min.js' %}"></script>
+  <script src="{% static 'js/owl.js' %}"></script>
+  <script src="{% static 'js/wow.js' %}"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+  
+</body>
+
+</html>

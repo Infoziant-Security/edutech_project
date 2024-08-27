@@ -1,0 +1,464 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: white;
+    padding: 15px 0;
+    color: white;
+}
+
+.sec-title h2{
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    /* padding: 0 20px; */
+}
+
+.logo h1 {
+    margin: 0;
+    color: purple;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+.nav-links li a:hover {
+    color: grey;
+    animation: bounceIn 1s;
+}
+
+.search-bar {
+    display: flex;
+    margin-right: 20px;
+    color: black;
+}
+
+.search-bar input {
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ebebeb;
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.auth-buttons .login-btn,
+.auth-buttons .signup-btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-left: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons .signup-btn {
+    background-color: #f44336; /* Different color for Sign Up */
+}
+
+.auth-buttons .login-btn:hover,
+.auth-buttons .signup-btn:hover {
+    background-color: #777;
+}
+
+.auth-buttons .signup-btn:hover {
+    background-color: #e53935; 
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+.boxes-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.box-head h2{
+    text-align: center;
+}
+.box-head{
+    padding-top: 6%;
+    background-color: #E6E6FA;
+}
+.box-content i {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.box-content h3 {
+    font-size: 17px;
+    color: #333;
+    font-weight: 500;
+}
+.pastel-blue {
+    background-color: white;
+}
+
+.pastel-pink {
+    background-color: white;
+}
+
+.pastel-green {
+    background-color: white;
+}
+
+.pastel-yellow {
+    background-color: white;
+}
+#box-icon-1{
+    color: #1967d2;
+}
+#box-icon-2{
+    color: #d93025;
+}
+#box-icon-3{
+    color: #f9ab00;
+}
+#box-icon-4{
+    color: #34a853;
+} 
+.shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.shape {
+    position: absolute;
+    opacity: 0.1;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(201, 92, 205);
+    border-radius: 50%;
+    top: -40px;
+    right: 1%;
+}
+.circle2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    top: 60%;
+    left: 60%;
+}
+.circle1 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    top: 35%;
+    left: -15%;
+}
+
+
+.square {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    top: 50px;
+    left: 20px;
+}
+
+.hexagon {
+    width: 100px;
+    height: 58px;
+    background-color: white;
+    position: relative;
+    margin: 29px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 29px solid white;
+}
+
+.hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 29px solid white;
+}
+
+.diamond {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    transform: rotate(45deg);
+    top: 40px;
+    left: 30px;
+}
+
+
+  /* General body and font styles */
+  body {
+    font-family: 'Arial', sans-serif; /* Premium, clean font */
+    color: #333;
+    background-color: #f5f5f5; /* Light background for contrast */
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  /* Box styles */
+  .box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; /* Rounded corners for a sleek look */
+    background-color: #ffffff; /* Default background color */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+
+  .box-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .box img {
+    max-width: 80px; /* Slightly larger icons */
+    transition: transform 0.3s ease;
+  }
+
+  .box:hover img {
+    transform: scale(1.1);
+  }
+
+  /* Animated circle effect */
+  .box::before,
+  .box::after,
+  .box .circle-third {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1); /* Darker shade */
+    width: 90px; /* Larger circles */
+    height: 90px; /* Larger circles */
+    z-index: 1;
+    opacity: 0.4;
+    animation: pulse 6s infinite ease-in-out;
+  }
+
+  .box::before {
+    top: -20px;
+    right: -20px;
+    background: rgba(0, 150, 136, 0.3); /* Premium teal */
+  }
+
+  .box::after {
+    bottom: -20px;
+    left: -20px;
+    background: rgba(33, 150, 243, 0.3); /* Premium blue */
+  }
+
+  .box .circle-third {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 193, 7, 0.3); /* Premium yellow */
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(0.9);
+      opacity: 0.4;
+    }
+    50% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+    100% {
+      transform: scale(0.9);
+      opacity: 0.4;
+    }
+  }
+
+  /* Shapes */
+  .box::before,
+  .box::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    width: 100px; /* Larger size for more impact */
+    height: 100px; /* Larger size for more impact */
+    z-index: 0;
+  }
+
+  .box::before {
+    top: -10px;
+    left: -10px;
+    background: rgba(255, 193, 7, 0.2); /* Premium yellow */
+  }
+
+  .box::after {
+    bottom: -10px;
+    right: -10px;
+    background: rgba(0, 150, 136, 0.2); /* Premium teal */
+  }
+
+
+@media (max-width: 768px) {
+    nav {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        height: 50%;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(100%);
+    }
+
+    nav.active {
+        transform: translateX(0);
+        animation: fadeInLeft 0.5s;
+        z-index: 1;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .search-bar {
+        margin-top: 15px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .auth-buttons {
+        display: none; /* Hide auth buttons on small screens */
+    }
+
+    .boxes-section {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 200px;
+        margin-right: 12vw;
+    }
+    .box-head{
+        padding-top: 20vw;
+    }
+    .box-head h2{
+        font-size: 7vw;
+        margin-right: 15%;
+    }
+    .circle{
+        right: 32%;
+    }
+}

@@ -83,6 +83,7 @@ DATABASES = {
         'PORT':'3306',
     }
 }
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 
 # Password validation

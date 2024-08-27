@@ -43,7 +43,7 @@
           <div class="outer-box">
             <!-- Login/Register -->
             <div class="btn-box">
-              <a href="register.html" class="theme-btn btn-style-three call-modal">Register</a>
+              <a href="/register/" class="theme-btn btn-style-three call-modal">Register</a>
               <!-- <a href="dashboard-post-job.html" class="theme-btn btn-style-one"><span class="btn-title">Job Post</span></a> -->
             </div>
           </div>
@@ -62,14 +62,15 @@
 
     <!-- Info Section -->
     <div class="login-section">
-      <div class="image-layer" style="background-image: url('{% static 'images/Sign\ Up\ Page.png' %}');"></div>
+      <div class="image-layer" style="background-image: url('{% static 'images/Sign Up Page.png' %}');"></div>
       <div class="outer-box">
         <!-- Login Form -->
         <div class="login-form default-form">
           <div class="form-inner">
             <h3>Login to Enbott</h3>
             <!--Login Form-->
-            <form method="post" action="add-parcel.html">
+            <form method="post" action="/login/">
+              {% csrf_token %}
               <div class="form-group">
                 <label>Username</label>
                 <input type="text" name="username" placeholder="Username" required>
@@ -96,7 +97,7 @@
             </form>
 
             <div class="bottom-box">
-              <div class="text">Don't have an account? <a href="register.html">Signup</a></div>
+              <div class="text">Don't have an account? <a href="/register/">Signup</a></div>
               <div class="divider"><span>or</span></div>
               <div class="btn-box row">
                 <div class="col-lg-6 col-md-12">

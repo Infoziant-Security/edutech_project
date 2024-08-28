@@ -11,7 +11,15 @@ urlpatterns = [
     path('candidate_profile/', views.candidate_profile, name='candidate_profile'),
     path('create-job-opening/', views.create_job_opening, name='create_job_opening'),
     path('employerhome/', views.employer_home, name='employer_home'),
+<<<<<<< HEAD
     path('candidate-view-jobs/', views.candidate_view_jobs, name='candidate_view_jobs'),
     path('job-detail/<int:job_id>/', views.job_detail, name='job_detail'),
 
+=======
+    path('dashboard-manage-job/', views.dashboard_manage_job, name='dashboard_manage_job'),
+    path('about/', views.about, name='about'),
+    path('jobs/', views.jobs, name='jobs'),
+    path('companies/', views.companies, name='companies'),
+    path('courses/', views.courses, name='courses')
+>>>>>>> f736212aed1b009541f8d0dc04bf387ddb5765a8
 ]

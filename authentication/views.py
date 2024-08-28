@@ -244,3 +244,15 @@ def dashboard_manage_job(request):
 
 def employer_home(request):
     return render(request, 'dashboard.html')
+
+def about(request):
+    return render(request, 'about.html')
+
+def jobs(request):
+    return render(request, 'jobs.html')
+
+def companies(request):
+    return render(request, 'companies.html')
+
+def courses(request):
+    return render(request, 'courses.html')

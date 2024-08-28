@@ -13,4 +13,8 @@ urlpatterns = [
     path('view-job-openings/', views.view_job_openings, name='view_job_openings'),
     path('employerhome/', views.employer_home, name='employer_home'),
     path('dashboard-manage-job/', views.dashboard_manage_job, name='dashboard_manage_job'),
+    path('about/', views.about, name='about'),
+    path('jobs/', views.jobs, name='jobs'),
+    path('companies/', views.companies, name='companies'),
+    path('courses/', views.courses, name='courses')
 ]

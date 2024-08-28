@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jobs - Enbott</title>
+
+    <!-- Stylesheets -->
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" type="image/x-icon" />
+    <link rel="icon" href="{% static 'images/favicon.png' %}" type="image/x-icon" />
+
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <!--[if lt IE 9
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js' %}"></script
+    ><![endif]-->
+    <!--[if lt IE 9]><script src="{% static 'js/respond.js' %}"></script><![endif]-->
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <!-- Preloader -->
+      <div class="preloader"></div>
+
+      <!-- Header Span -->
+      <span class="header-span"></span>
+
+      <!-- Main Header-->
+      <header class="main-header">
+        <!-- Main box -->
+        <div class="main-box">
+          <!--Nav Outer -->
+          <div class="nav-outer">
+            <div class="logo-box">
+              <div class="logo">
+                <a href="index.html"
+                  ><img src="{% static 'images/enbott-logo.png' %}" alt="" title=""
+                /></a>
+              </div>
+            </div>
+
+            <nav class="nav main-menu">
+              <ul class="navigation" id="navbar">
+                <li >
+                  <a href="index.html">Home</a>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li class="current ">
+                  <a href="jobs.html">Jobs</a>
+                </li>
+  
+                <li>
+                  <a href="companies.html">Companies</a>
+                </li>
+  
+                <li>
+                  <a href="courses.html">Courses</a>
+                </li>
+
+                <!-- Only for Mobile View -->
+                <li class="mm-add-listing">
+                  <a href="add-listing.html" class="theme-btn btn-style-one"
+                    >Job Post</a
+                  >
+                  <span>
+                    <span class="contact-info">
+                      <span class="phone-num"
+                        ><span>Call us</span
+                        ><a href="tel:1234567890">123 456 7890</a></span
+                      >
+                      <span class="address"
+                        >329 Queensberry Street, North Melbourne VIC <br />3051,
+                        Australia.</span
+                      >
+                      <a href="mailto:support@superio.com" class="email"
+                        >support@superio.com</a
+                      >
+                    </span>
+                    <span class="social-links">
+                      <a href="#"><span class="fab fa-facebook-f"></span></a>
+                      <a href="#"><span class="fab fa-twitter"></span></a>
+                      <a href="#"><span class="fab fa-instagram"></span></a>
+                      <a href="#"><span class="fab fa-linkedin-in"></span></a>
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </nav>
+            <!-- Main Menu End-->
+          </div>
+
+          <div class="outer-box">
+            <!-- Add Listing -->
+            <a href="candidate-dashboard-cv-manager.html" class="upload-cv">
+              Upload your CV</a
+            >
+            <!-- Login/Register -->
+            <div class="btn-box">
+              <a
+                href="login-popup.html"
+                class="theme-btn btn-style-three call-modal"
+                >Login / Register</a
+              >
+              <a href="dashboard-post-job.html" class="theme-btn btn-style-one"
+                >Job Post</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Header -->
+        <div class="mobile-header">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="{% static 'images/logo.svg' %}" alt="" title=""
+            /></a>
+          </div>
+
+          <!--Nav Box-->
+          <div class="nav-outer clearfix">
+            <div class="outer-box">
+              <!-- Login/Register -->
+              <div class="login-box">
+                <a href="login-popup.html" class="call-modal"
+                  ><span class="icon-user"></span
+                ></a>
+              </div>
+
+              <a href="#nav-mobile" class="mobile-nav-toggler"
+                ><span class="flaticon-menu-1"></span
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="nav-mobile"></div>
+      </header>
+      <!--End Main Header -->
+
+      <!--Page Title-->
+      <section class="page-title style-three">
+        <div class="auto-container">
+          <!-- Job Search Form -->
+          <div class="job-search-form">
+            <form method="post" action="job-list-v10.html">
+              <div class="row">
+                <!-- Form Group -->
+                <div class="form-group col-lg-4 col-md-12 col-sm-12">
+                  <span class="icon flaticon-search-1"></span>
+                  <input
+                    type="text"
+                    name="field_name"
+                    placeholder="Job title, keywords, or company"
+                  />
+                </div>
+
+                <!-- Form Group -->
+                <div class="form-group col-lg-3 col-md-12 col-sm-12 location">
+                  <span class="icon flaticon-map-locator"></span>
+                  <input
+                    type="text"
+                    name="field_name"
+                    placeholder="City or postcode"
+                  />
+                </div>
+
+                <!-- Form Group -->
+                <div class="form-group col-lg-3 col-md-12 col-sm-12 location">
+                  <span class="icon flaticon-briefcase"></span>
+                  <select class="chosen-select">
+                    <option value="">All Categories</option>
+                    <option value="44">Accounting / Finance</option>
+                    <option value="106">Automotive Jobs</option>
+                    <option value="46">Customer</option>
+                    <option value="48">Design</option>
+                    <option value="47">Development</option>
+                    <option value="45">Health and Care</option>
+                    <option value="105">Marketing</option>
+                    <option value="107">Project Management</option>
+                  </select>
+                </div>
+
+                <!-- Form Group -->
+                <div class="form-group col-lg-2 col-md-12 col-sm-12 text-right">
+                  <button type="submit" class="theme-btn btn-style-one">
+                    Find Jobs
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- Job Search Form -->
+
+          <div class="top-filters">
+            <div class="form-group">
+              <select class="chosen-select">
+                <option>Job Type</option>
+                <option>New Jobs</option>
+                <option>Freelance</option>
+                <option>Full Time</option>
+                <option>Internship</option>
+                <option>Part Time</option>
+                <option>Temporary</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <select class="chosen-select">
+                <option>Date Posted</option>
+                <option>New Jobs</option>
+                <option>Freelance</option>
+                <option>Full Time</option>
+                <option>Internship</option>
+                <option>Part Time</option>
+                <option>Temporary</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <select class="chosen-select">
+                <option>Experience Level</option>
+                <option>New Jobs</option>
+                <option>Freelance</option>
+                <option>Full Time</option>
+                <option>Internship</option>
+                <option>Part Time</option>
+                <option>Temporary</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <select class="chosen-select">
+                <option>Salary estimate</option>
+                <option>New Jobs</option>
+                <option>Freelance</option>
+                <option>Full Time</option>
+                <option>Internship</option>
+                <option>Part Time</option>
+                <option>Temporary</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End Page Title-->
+
+      <!-- Listing Section -->
+      <section class="ls-section style-three">
+        <div class="auto-container">
+          <div class="filters-backdrop"></div>
+
+          <div class="row">
+            <!-- Content Column -->
+            <div class="content-column col-lg-12">
+              <div class="ls-outer">
+                <!-- ls Switcher -->
+                <div class="ls-switcher">
+                  <div class="showing-result">
+                    <div class="text">
+                      Showing <strong>41-60</strong> of
+                      <strong>944</strong> jobs
+                    </div>
+                  </div>
+
+                  <div class="sort-by">
+                    <select class="chosen-select">
+                      <option>New Jobs</option>
+                      <option>Freelance</option>
+                      <option>Full Time</option>
+                      <option>Internship</option>
+                      <option>Part Time</option>
+                      <option>Temporary</option>
+                    </select>
+
+                    <select class="chosen-select">
+                      <option>Show 10</option>
+                      <option>Show 20</option>
+                      <option>Show 30</option>
+                      <option>Show 40</option>
+                      <option>Show 50</option>
+                      <option>Show 60</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <!-- Job Block -->
+                  <div
+                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
+                  >
+                    <div class="inner-box">
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <span class="company-logo"
+                        ><img src="{% static 'images/resource/company-logo/3-1.png' %}" alt=""
+                      /></span>
+                      <span class="company-name">Catalyst</span>
+                      <h4>
+                        <a href="job-single.html">Software Engineer (Android), Libraries</a>
+                      </h4>
+                      <div class="location">
+                        <span class="icon flaticon-map-locator"></span> London,
+                        UK
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Job Block -->
+                  <div
+                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
+                  >
+                    <div class="inner-box">
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <span class="company-logo"
+                        ><img src="{% static 'images/resource/company-logo/3-2.png' %}" alt=""
+                      /></span>
+                      <span class="company-name">Catalyst</span>
+                      <h4>
+                        <a href="job-single.html">Software Engineer (Android), Libraries</a>
+                      </h4>
+                      <div class="location">
+                        <span class="icon flaticon-map-locator"></span> London,
+                        UK
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Job Block -->
+                  <div
+                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
+                  >
+                    <div class="inner-box">
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <span class="company-logo"
+                        ><img src="{% static 'images/resource/company-logo/3-3.png' %}" alt=""
+                      /></span>
+                      <span class="company-name">Catalyst</span>
+                      <h4>
+                        <a href="job-single.html">Software Engineer (Android), Libraries</a>
+                      </h4>
+                      <div class="location">
+                        <span class="icon flaticon-map-locator"></span> London,
+                        UK
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Job Block -->
+                  <div
+                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
+                  >
+                    <div class="inner-box">
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <span class="company-logo"
+                        ><img src="{% static 'images/resource/company-logo/3-4.png' %}" alt=""
+                      /></span>
+                      <span class="company-name">Catalyst</span>
+                      <h4>
+                        <a href="job-single.html">Software Engineer (Android), Libraries</a>
+                      </h4>
+                      <div class="location">
+                        <span class="icon flaticon-map-locator"></span> London,
+                        UK
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Job Block -->
+                  <div
+                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
+                  >
+                    <div class="inner-box">
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <span class="company-logo"
+                        ><img src="{% static 'images/resource/company-logo/3-5.png' %}" alt=""
+                      /></span>
+                      <span class="company-name">Catalyst</span>
+                      <h4>
+                        <a href="#">Software Engineer (Android), Libraries</a>
+                      </h4>
+                      <div class="location">
+                        <span class="icon flaticon-map-locator"></span> London,
+                        UK
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Job Block -->
+                  <div
+                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
+                  >
+                    <div class="inner-box">
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <span class="company-logo"
+                        ><img src="{% static 'images/resource/company-logo/3-6.png' %}" alt=""
+                      /></span>
+                      <span class="company-name">Catalyst</span>
+                      <h4>
+                        <a href="#">Software Engineer (Android), Libraries</a>
+                      </h4>
+                      <div class="location">
+                        <span class="icon flaticon-map-locator"></span> London,
+                        UK
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Job Block -->
+                  <div
+                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
+                  >
+                    <div class="inner-box">
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <span class="company-logo"
+                        ><img src="{% static 'images/resource/company-logo/3-1.png' %}" alt=""
+                      /></span>
+                      <span class="company-name">Catalyst</span>
+                      <h4>
+                        <a href="#">Software Engineer (Android), Libraries</a>
+                      </h4>
+                      <div class="location">
+                        <span class="icon flaticon-map-locator"></span> London,
+                        UK
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Job Block -->
+                  <div
+                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
+                  >
+                    <div class="inner-box">
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <span class="company-logo"
+                        ><img src="{% static 'images/resource/company-logo/3-2.png' %}" alt=""
+                      /></span>
+                      <span class="company-name">Catalyst</span>
+                      <h4>
+                        <a href="#">Software Engineer (Android), Libraries</a>
+                      </h4>
+                      <div class="location">
+                        <span class="icon flaticon-map-locator"></span> London,
+                        UK
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Job Block -->
+                  <div
+                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
+                  >
+                    <div class="inner-box">
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <span class="company-logo"
+                        ><img src="{% static 'images/resource/company-logo/3-3.png' %}" alt=""
+                      /></span>
+                      <span class="company-name">Catalyst</span>
+                      <h4>
+                        <a href="#">Software Engineer (Android), Libraries</a>
+                      </h4>
+                      <div class="location">
+                        <span class="icon flaticon-map-locator"></span> London,
+                        UK
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Job Block -->
+                  <div
+                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
+                  >
+                    <div class="inner-box">
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <span class="company-logo"
+                        ><img src="{% static 'images/resource/company-logo/3-4.png' %}" alt=""
+                      /></span>
+                      <span class="company-name">Catalyst</span>
+                      <h4>
+                        <a href="#">Software Engineer (Android), Libraries</a>
+                      </h4>
+                      <div class="location">
+                        <span class="icon flaticon-map-locator"></span> London,
+                        UK
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Job Block -->
+                  <div
+                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
+                  >
+                    <div class="inner-box">
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <span class="company-logo"
+                        ><img src="{% static 'images/resource/company-logo/3-5.png' %}" alt=""
+                      /></span>
+                      <span class="company-name">Catalyst</span>
+                      <h4>
+                        <a href="#">Software Engineer (Android), Libraries</a>
+                      </h4>
+                      <div class="location">
+                        <span class="icon flaticon-map-locator"></span> London,
+                        UK
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Job Block -->
+                  <div
+                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
+                  >
+                    <div class="inner-box">
+                      <ul class="job-other-info">
+                        <li class="time">Full Time</li>
+                        <li class="privacy">Private</li>
+                        <li class="required">Urgent</li>
+                      </ul>
+                      <span class="company-logo"
+                        ><img src="{% static 'images/resource/company-logo/3-6.png' %}" alt=""
+                      /></span>
+                      <span class="company-name">Catalyst</span>
+                      <h4>
+                        <a href="#">Software Engineer (Android), Libraries</a>
+                      </h4>
+                      <div class="location">
+                        <span class="icon flaticon-map-locator"></span> London,
+                        UK
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Listing Show More -->
+                <div class="ls-show-more">
+                  <p>Showing 36 of 497 Jobs</p>
+                  <div class="bar">
+                    <span class="bar-inner" style="width: 40%"></span>
+                  </div>
+                  <button class="show-more">Show More</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End Listing Page Section -->
+
+      <!-- Main Footer -->
+      <footer class="main-footer alternate5">
+        <div class="auto-container">
+          <!--Widgets Section-->
+          <div class="widgets-section">
+            <div class="row">
+              <div class="big-column col-xl-4 col-lg-3 col-md-12">
+                <div class="footer-column about-widget">
+                  <div class="logo">
+                    <a href="#"><img src="{% static 'images/enbott-logo.png' %}" alt="" /></a>
+                  </div>
+                  <p class="phone-num">
+                    <span>Call us </span
+                    >
+                    <a href="thebeehost@support.com">1 (314) 732 0300</a><br/>
+                    <a href="thebeehost@support.com">+91 96000 85988</a>
+                  </p>
+                  <p class="address">
+                    Akshaya HQ, Rajiv Gandhi Salai, Kazhipattur,<br />
+                    Tamil Nadu, Chennai - 603103, India. <br />
+                    <p class="address">
+                      1401, 21st ST STE 6310,<br/>
+                      Sacramento, CA 95811, USA.
+                    </p>
+                    <a
+                      href="mailto:support@superio.com"
+                      class="email"
+                      >support@infoziant.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="big-column col-xl-8 col-lg-9 col-md-12">
+                <div class="row">
+                  <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-widget links-widget">
+                      <h4 class="widget-title">For Candidates</h4>
+                      <div class="widget-content">
+                        <ul class="list">
+                          <li><a href="#">Browse Jobs</a></li>
+                          <li><a href="#">Browse Categories</a></li>
+                          <li><a href="#">Candidate Dashboard</a></li>
+                          <li><a href="#">Job Alerts</a></li>
+                          <li><a href="#">My Bookmarks</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-widget links-widget">
+                      <h4 class="widget-title">For Employers</h4>
+                      <div class="widget-content">
+                        <ul class="list">
+                          <li><a href="#">Browse Candidates</a></li>
+                          <li><a href="#">Employer Dashboard</a></li>
+                          <li><a href="#">Add Job</a></li>
+                          <li><a href="#">Job Packages</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-widget links-widget">
+                      <h4 class="widget-title">About Us</h4>
+                      <div class="widget-content">
+                        <ul class="list">
+                          <li><a href="#">Job Page</a></li>
+                          <li><a href="#">Job Page Alternative</a></li>
+                          <li><a href="#">Resume Page</a></li>
+                          <li><a href="#">Blog</a></li>
+                          <li><a href="#">Contact</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="footer-column col-lg-3 col-md-6 col-sm-12">
+                    <div class="footer-widget links-widget">
+                      <h4 class="widget-title">Helpful Resources</h4>
+                      <div class="widget-content">
+                        <ul class="list">
+                          <li><a href="#">Site Map</a></li>
+                          <li><a href="#">Terms of Use</a></li>
+                          <li><a href="#">Privacy Center</a></li>
+                          <li><a href="#">Security Center</a></li>
+                          <li><a href="#">Accessibility Center</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Bottom-->
+        <div class="footer-bottom">
+          <div class="auto-container">
+            <div class="outer-box">
+              <div class="copyright-text">
+                © 2021 <a href="#">Superio</a>. All Right Reserved.
+              </div>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll To Top -->
+        <div class="scroll-to-top scroll-to-target" data-target="html">
+          <span class="fa fa-angle-up"></span>
+        </div>
+      </footer>
+      <!-- End Main Footer -->
+    </div>
+    <!-- End Page Wrapper -->
+
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.min.js' %}"></script>
+    <script src="{% static 'js/chosen.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'js/jquery.modal.min.js' %}"></script>
+    <script src="{% static 'js/mmenu.polyfills.js' %}"></script>
+    <script src="{% static 'js/mmenu.js' %}"></script>
+    <script src="{% static 'js/appear.js' %}"></script>
+    <script src="{% static 'js/ScrollMagic.min.js' %}"></script>
+    <script src="{% static 'js/rellax.min.js' %}"></script>
+    <script src="{% static 'js/owl.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

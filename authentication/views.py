@@ -171,7 +171,7 @@ def create_job_opening(request):
         qualification = request.POST.get('qualification')
 
         # Handle the date as text in DD.MM.YYYY format
-        application_deadline_date_str = request.POST.get('application_deadline_date')
+        application_deadline_date_str = request.POST.get('deadline_date')
         if not application_deadline_date_str:
             return HttpResponseBadRequest("Error: Application deadline date is required.")
         
@@ -207,60 +207,21 @@ def create_job_opening(request):
     return render(request, 'dashboard-post-job.html')
 
 def view_job_openings(request):
-    if request.method == "POST":
-        # Extract data from POST request
-        job_title = request.POST.get('job_title')
-        job_description = request.POST.get('job_description')
-        email_address = request.POST.get('email_address')
-        username = request.POST.get('username')
-        specialisms = ','.join(request.POST.getlist('specialisms'))
-        job_type = request.POST.get('job_type')
+    with connections['default'].cursor() as cursor:
+        cursor.execute("""
+            SELECT id, job_title, job_description, email_address, username, specialisms, 
+                   job_type, offered_salary, career_level, experience, gender, industry, 
+                   qualification, application_deadline_date, country, city, complete_address, 
+                   find_on_map, latitude, longitude 
+            FROM job_openings
+        """)
+        job_listings = cursor.fetchall()
 
-        # Handle the offered salary and remove non-numeric characters except the decimal point
-        offered_salary_str = request.POST.get('offered_salary')
-        offered_salary = re.sub(r'[^\d.]', '', offered_salary_str) if offered_salary_str else None
-
-        career_level = request.POST.get('career_level')
-        experience = request.POST.get('experience')
-        gender = request.POST.get('gender')
-        industry = request.POST.get('industry')
-        qualification = request.POST.get('qualification')
-
-        # Handle the date as text in DD.MM.YYYY format
-        application_deadline_date_str = request.POST.get('application_deadline_date')
-        if not application_deadline_date_str:
-            return HttpResponseBadRequest("Error: Application deadline date is required.")
-        
-        try:
-            day, month, year = map(int, application_deadline_date_str.split('.'))
-            application_deadline_date = datetime.date(year, month, day)
-        except ValueError:
-            return HttpResponseBadRequest("Error: Invalid date format. Use DD.MM.YYYY.")
-        
-        country = request.POST.get('country')
-        city = request.POST.get('city')
-        complete_address = request.POST.get('complete_address')
-        find_on_map = request.POST.get('find_on_map')
-        latitude = request.POST.get('latitude')
-        longitude = request.POST.get('longitude')
-
-        # Insert data into the job_openings table
-        with connection.cursor() as cursor:
-            cursor.execute("""
-                INSERT INTO job_openings (
-                    job_title, job_description, email_address, username, specialisms, job_type, offered_salary, career_level,
-                    experience, gender, industry, qualification, application_deadline_date, country, city, complete_address,
-                    find_on_map, latitude, longitude
-                ) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-            """, [
-                job_title, job_description, email_address, username, specialisms, job_type, offered_salary, career_level,
-                experience, gender, industry, qualification, application_deadline_date, country, city, complete_address,
-                find_on_map, latitude, longitude
-            ])
-
-        return redirect('/dashboard-manage-job/')
-
-    return render(request, 'dashboard-manage-job.html')
+    # Pass the data to the template
+    context = {
+        'job_listings': job_listings
+    }
+    return render(request, 'dashboard-manage-job.html', context)
 
 
 

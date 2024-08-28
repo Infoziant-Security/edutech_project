@@ -10,6 +10,8 @@ from django.http import HttpResponseBadRequest
 import datetime
 import re
 from django.http import HttpResponse
+from django.http import Http404
+from datetime import datetime
 
 # Function to execute raw SQL queries
 def execute_raw_sql(query, params=None):
@@ -202,45 +204,52 @@ def create_job_opening(request):
                 find_on_map, latitude, longitude
             ])
 
-        return redirect('/dashboard-manage-job/')
+        return redirect('/candidate-view-jobs/')  # Redirect to the page displaying job openings
 
     return render(request, 'dashboard-post-job.html')
 
-def view_job_openings(request):
-    with connections['default'].cursor() as cursor:
+def candidate_view_jobs(request):
+    with connection.cursor() as cursor:
         cursor.execute("""
-            SELECT id, job_title, job_description, email_address, username, specialisms, 
-                   job_type, offered_salary, career_level, experience, gender, industry, 
-                   qualification, application_deadline_date, country, city, complete_address, 
-                   find_on_map, latitude, longitude 
+            SELECT id, job_title, job_description, email_address, username, specialisms, job_type, offered_salary, career_level,
+                   experience, gender, industry, qualification, application_deadline_date, country, city, complete_address,
+                   find_on_map, latitude, longitude
             FROM job_openings
         """)
         job_listings = cursor.fetchall()
 
-    # Pass the data to the template
     context = {
         'job_listings': job_listings
     }
-    return render(request, 'dashboard-manage-job.html', context)
+    return render(request, 'candidate-view-jobs.html', context)
 
 
-
-def dashboard_manage_job(request):
-    with connections['default'].cursor() as cursor:
+def job_detail(request, job_id):
+    with connection.cursor() as cursor:
         cursor.execute("""
-            SELECT id, job_title, job_description, email_address, username, specialisms, 
-                   job_type, offered_salary, career_level, experience, gender, industry, 
-                   qualification, application_deadline_date, country, city, complete_address, 
-                   find_on_map, latitude, longitude 
+            SELECT job_title, job_description, username, offered_salary, city, country, application_deadline_date
             FROM job_openings
-        """)
-        job_listings = cursor.fetchall()
+            WHERE id = %s
+        """, [job_id])
+        row = cursor.fetchone()
 
-    # Pass the data to the template
-    context = {
-        'job_listings': job_listings
-    }
-    return render(request, 'dashboard-manage-job.html', context)
+    if row:
+        job = {
+            'job_title': row[0],
+            'job_description': row[1],
+            'username': row[2],
+            'offered_salary': row[3],
+            'city': row[4],
+            'country': row[5],
+            'application_deadline_date': row[6]
+        }
+        context = {
+            'job': job,
+            'date_posted': datetime.now().strftime('%B %d, %Y'),  # Today's date
+        }
+        return render(request, 'job-single-5.html', context)
+    else:
+        raise Http404("Job not found")
 
 def employer_home(request):
     return render(request, 'dashboard.html')

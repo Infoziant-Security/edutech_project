@@ -99,23 +99,7 @@
             <!-- Main Menu End-->
           </div>
 
-          <div class="outer-box">
-            <!-- Add Listing -->
-            <a href="candidate-dashboard-cv-manager.html" class="upload-cv">
-              Upload your CV</a
-            >
-            <!-- Login/Register -->
-            <div class="btn-box">
-              <a
-                href="login-popup.html"
-                class="theme-btn btn-style-three call-modal"
-                >Login / Register</a
-              >
-              <a href="dashboard-post-job.html" class="theme-btn btn-style-one"
-                >Job Post</a
-              >
-            </div>
-          </div>
+          
         </div>
 
         <!-- Mobile Header -->
@@ -295,294 +279,32 @@
                 </div>
 
                 <div class="row">
-                  <!-- Job Block -->
-                  <div
-                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
-                  >
-                    <div class="inner-box">
-                      <ul class="job-other-info">
-                        <li class="time">Full Time</li>
-                        <li class="privacy">Private</li>
-                        <li class="required">Urgent</li>
-                      </ul>
-                      <span class="company-logo"
-                        ><img src="{% static 'images/resource/company-logo/3-1.png' %}" alt=""
-                      /></span>
-                      <span class="company-name">Catalyst</span>
-                      <h4>
-                        <a href="job-single.html">Software Engineer (Android), Libraries</a>
-                      </h4>
-                      <div class="location">
-                        <span class="icon flaticon-map-locator"></span> London,
-                        UK
-                      </div>
-                    </div>
-                  </div>
+                  {% for job in job_listings %}
+    <div class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="inner-box">
+            <ul class="job-other-info">
+                <li class="time">{{ job.14 }}</li> <!-- application_deadline_date -->
+                <li class="privacy">Private</li>
+                <li class="required">Urgent</li>
+            </ul>
+            <span class="company-logo">
+                <img src="{% static 'images/resource/company-logo/3-1.png' %}" alt="" />
+            </span>
+            <span class="company-name">{{ job.4 }}</span> <!-- username -->
+            <h4>
+                <a href="{% url 'job_detail' job.0 %}">{{ job.1 }}</a> <!-- job_title -->
+            </h4>
+            <div class="location">
+                <span class="icon flaticon-map-locator"></span> {{ job.15 }}, {{ job.16 }} <!-- city, country -->
+            </div>
+        </div>
+    </div>
+{% endfor %}
 
-                  <!-- Job Block -->
-                  <div
-                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
-                  >
-                    <div class="inner-box">
-                      <ul class="job-other-info">
-                        <li class="time">Full Time</li>
-                        <li class="privacy">Private</li>
-                        <li class="required">Urgent</li>
-                      </ul>
-                      <span class="company-logo"
-                        ><img src="{% static 'images/resource/company-logo/3-2.png' %}" alt=""
-                      /></span>
-                      <span class="company-name">Catalyst</span>
-                      <h4>
-                        <a href="job-single.html">Software Engineer (Android), Libraries</a>
-                      </h4>
-                      <div class="location">
-                        <span class="icon flaticon-map-locator"></span> London,
-                        UK
-                      </div>
-                    </div>
-                  </div>
+              
+                  
 
-                  <!-- Job Block -->
-                  <div
-                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
-                  >
-                    <div class="inner-box">
-                      <ul class="job-other-info">
-                        <li class="time">Full Time</li>
-                        <li class="privacy">Private</li>
-                        <li class="required">Urgent</li>
-                      </ul>
-                      <span class="company-logo"
-                        ><img src="{% static 'images/resource/company-logo/3-3.png' %}" alt=""
-                      /></span>
-                      <span class="company-name">Catalyst</span>
-                      <h4>
-                        <a href="job-single.html">Software Engineer (Android), Libraries</a>
-                      </h4>
-                      <div class="location">
-                        <span class="icon flaticon-map-locator"></span> London,
-                        UK
-                      </div>
-                    </div>
-                  </div>
 
-                  <!-- Job Block -->
-                  <div
-                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
-                  >
-                    <div class="inner-box">
-                      <ul class="job-other-info">
-                        <li class="time">Full Time</li>
-                        <li class="privacy">Private</li>
-                        <li class="required">Urgent</li>
-                      </ul>
-                      <span class="company-logo"
-                        ><img src="{% static 'images/resource/company-logo/3-4.png' %}" alt=""
-                      /></span>
-                      <span class="company-name">Catalyst</span>
-                      <h4>
-                        <a href="job-single.html">Software Engineer (Android), Libraries</a>
-                      </h4>
-                      <div class="location">
-                        <span class="icon flaticon-map-locator"></span> London,
-                        UK
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Job Block -->
-                  <div
-                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
-                  >
-                    <div class="inner-box">
-                      <ul class="job-other-info">
-                        <li class="time">Full Time</li>
-                        <li class="privacy">Private</li>
-                        <li class="required">Urgent</li>
-                      </ul>
-                      <span class="company-logo"
-                        ><img src="{% static 'images/resource/company-logo/3-5.png' %}" alt=""
-                      /></span>
-                      <span class="company-name">Catalyst</span>
-                      <h4>
-                        <a href="#">Software Engineer (Android), Libraries</a>
-                      </h4>
-                      <div class="location">
-                        <span class="icon flaticon-map-locator"></span> London,
-                        UK
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Job Block -->
-                  <div
-                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
-                  >
-                    <div class="inner-box">
-                      <ul class="job-other-info">
-                        <li class="time">Full Time</li>
-                        <li class="privacy">Private</li>
-                        <li class="required">Urgent</li>
-                      </ul>
-                      <span class="company-logo"
-                        ><img src="{% static 'images/resource/company-logo/3-6.png' %}" alt=""
-                      /></span>
-                      <span class="company-name">Catalyst</span>
-                      <h4>
-                        <a href="#">Software Engineer (Android), Libraries</a>
-                      </h4>
-                      <div class="location">
-                        <span class="icon flaticon-map-locator"></span> London,
-                        UK
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Job Block -->
-                  <div
-                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
-                  >
-                    <div class="inner-box">
-                      <ul class="job-other-info">
-                        <li class="time">Full Time</li>
-                        <li class="privacy">Private</li>
-                        <li class="required">Urgent</li>
-                      </ul>
-                      <span class="company-logo"
-                        ><img src="{% static 'images/resource/company-logo/3-1.png' %}" alt=""
-                      /></span>
-                      <span class="company-name">Catalyst</span>
-                      <h4>
-                        <a href="#">Software Engineer (Android), Libraries</a>
-                      </h4>
-                      <div class="location">
-                        <span class="icon flaticon-map-locator"></span> London,
-                        UK
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Job Block -->
-                  <div
-                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
-                  >
-                    <div class="inner-box">
-                      <ul class="job-other-info">
-                        <li class="time">Full Time</li>
-                        <li class="privacy">Private</li>
-                        <li class="required">Urgent</li>
-                      </ul>
-                      <span class="company-logo"
-                        ><img src="{% static 'images/resource/company-logo/3-2.png' %}" alt=""
-                      /></span>
-                      <span class="company-name">Catalyst</span>
-                      <h4>
-                        <a href="#">Software Engineer (Android), Libraries</a>
-                      </h4>
-                      <div class="location">
-                        <span class="icon flaticon-map-locator"></span> London,
-                        UK
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Job Block -->
-                  <div
-                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
-                  >
-                    <div class="inner-box">
-                      <ul class="job-other-info">
-                        <li class="time">Full Time</li>
-                        <li class="privacy">Private</li>
-                        <li class="required">Urgent</li>
-                      </ul>
-                      <span class="company-logo"
-                        ><img src="{% static 'images/resource/company-logo/3-3.png' %}" alt=""
-                      /></span>
-                      <span class="company-name">Catalyst</span>
-                      <h4>
-                        <a href="#">Software Engineer (Android), Libraries</a>
-                      </h4>
-                      <div class="location">
-                        <span class="icon flaticon-map-locator"></span> London,
-                        UK
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Job Block -->
-                  <div
-                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
-                  >
-                    <div class="inner-box">
-                      <ul class="job-other-info">
-                        <li class="time">Full Time</li>
-                        <li class="privacy">Private</li>
-                        <li class="required">Urgent</li>
-                      </ul>
-                      <span class="company-logo"
-                        ><img src="{% static 'images/resource/company-logo/3-4.png' %}" alt=""
-                      /></span>
-                      <span class="company-name">Catalyst</span>
-                      <h4>
-                        <a href="#">Software Engineer (Android), Libraries</a>
-                      </h4>
-                      <div class="location">
-                        <span class="icon flaticon-map-locator"></span> London,
-                        UK
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Job Block -->
-                  <div
-                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
-                  >
-                    <div class="inner-box">
-                      <ul class="job-other-info">
-                        <li class="time">Full Time</li>
-                        <li class="privacy">Private</li>
-                        <li class="required">Urgent</li>
-                      </ul>
-                      <span class="company-logo"
-                        ><img src="{% static 'images/resource/company-logo/3-5.png' %}" alt=""
-                      /></span>
-                      <span class="company-name">Catalyst</span>
-                      <h4>
-                        <a href="#">Software Engineer (Android), Libraries</a>
-                      </h4>
-                      <div class="location">
-                        <span class="icon flaticon-map-locator"></span> London,
-                        UK
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Job Block -->
-                  <div
-                    class="job-block-four col-xl-3 col-lg-4 col-md-6 col-sm-12"
-                  >
-                    <div class="inner-box">
-                      <ul class="job-other-info">
-                        <li class="time">Full Time</li>
-                        <li class="privacy">Private</li>
-                        <li class="required">Urgent</li>
-                      </ul>
-                      <span class="company-logo"
-                        ><img src="{% static 'images/resource/company-logo/3-6.png' %}" alt=""
-                      /></span>
-                      <span class="company-name">Catalyst</span>
-                      <h4>
-                        <a href="#">Software Engineer (Android), Libraries</a>
-                      </h4>
-                      <div class="location">
-                        <span class="icon flaticon-map-locator"></span> London,
-                        UK
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
                 <!-- Listing Show More -->
                 <div class="ls-show-more">
